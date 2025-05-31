@@ -1,8 +1,17 @@
+import CallToAction from "./CallToAction";
+
 function AppMain() {
   return (
-    <main>
-      <p>------ Content Goes here --------</p>
-    </main>
+    <>
+      <main>
+        <section className="content ">
+          <div className="container ">
+            <p>------ Content Goes here --------</p>
+          </div>
+        </section>
+        <CallToAction />
+      </main>
+    </>
   );
 }
 
