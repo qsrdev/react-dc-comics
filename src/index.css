@@ -23,7 +23,7 @@ img {
 
 .flex-align {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .header {
@@ -85,13 +85,19 @@ img {
 .col-33 {
   max-width: 33%;
   margin-right: 3rem;
+
   ul {
     list-style: none;
+    font-size: 0.8rem;
+    li {
+      padding: 2px 0 2px;
+    }
   }
 
   h3 {
     color: white;
     text-transform: uppercase;
+    margin: 5px 0 5px;
   }
 
   a {
@@ -106,13 +112,11 @@ img {
 }
 
 .jumbo {
-  height: 400px;
+  min-height: 400px;
   background-image: url(../public/img/footer-bg.jpg);
   background-size: cover;
-}
-
-.row {
-  margin: 0 auto;
+  isolation: isolate;
+  position: relative;
 }
 
 .logo-bg {
@@ -126,10 +130,35 @@ img {
   overflow: hidden;
 }
 
+.footerBottom {
+  padding: 10px 40px;
+  height: 155px;
+  background-color: rgba(48, 48, 48, 255);
+}
+
+.signup {
+  padding: 8px 16px;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 2px solid rgba(36, 134, 242, 255);
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.follow-us {
+  margin-right: 20px;
+  text-transform: uppercase;
+  color: rgba(36, 134, 242, 255);
+}
 /* utilities */
 
+.my-5 {
+  margin-top: 5px;
+}
+
 .mr-5 {
-  margin-right: 5;
+  margin-right: 5px;
 }
 
 .inbetween {
