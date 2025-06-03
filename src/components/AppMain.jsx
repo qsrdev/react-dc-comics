@@ -1,11 +1,12 @@
 import CallToAction from "./CallToAction";
-import comics from "../../data/comics.js";
 import ComicsDisplay from "./CurrentComics";
+import Jumbo from "./Cover.jsx";
 
 function AppMain() {
   return (
     <>
       <main>
+        <Jumbo />
         <section className="content">
           <ComicsDisplay />
         </section>

@@ -151,11 +151,14 @@ img {
 .card {
   width: calc(100% / 6);
   padding: 10px;
+  cursor: pointer;
+
   img {
     width: 100%;
     aspect-ratio: 1 / 1;
     object-fit: cover;
     display: block;
+    object-position: center top;
   }
 }
 
@@ -163,10 +166,31 @@ img {
   display: flex;
   flex-wrap: wrap;
 }
+
+.loadmore {
+  padding: 8px 24px;
+  text-transform: uppercase;
+  background-color: rgba(36, 134, 242, 255);
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  align-self: center;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+h5 {
+  font-weight: normal;
+}
+
 /* utilities */
 
 .my-5 {
   margin-top: 5px;
+}
+
+.mtb-5 {
+  margin: 15px;
 }
 
 .mr-5 {
