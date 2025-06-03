@@ -1,13 +1,13 @@
 import CallToAction from "./CallToAction";
+import comics from "../../data/comics.js";
+import ComicsDisplay from "./CurrentComics";
 
 function AppMain() {
   return (
     <>
       <main>
-        <section className="content ">
-          <div className="container ">
-            <p>------ Content Goes here --------</p>
-          </div>
+        <section className="content">
+          <ComicsDisplay />
         </section>
         <CallToAction />
       </main>
