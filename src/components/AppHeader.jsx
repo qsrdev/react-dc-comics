@@ -1,4 +1,17 @@
 function appHeader() {
+  const headerMenu = [
+    { title: "characters", url: "/characters" },
+    { title: "comics", url: "/comics" },
+    { title: "movies", url: "/movies" },
+    { title: "tv", url: "/tv" },
+    { title: "games", url: "/games" },
+    { title: "collectibles", url: "/collectibles" },
+    { title: "videos", url: "/videos" },
+    { title: "fans", url: "/fans" },
+    { title: "news", url: "/news" },
+    { title: "shop", url: "/shop" },
+  ];
+
   return (
     <header className="header">
       <div className="container flex inbetween">
@@ -7,36 +20,11 @@ function appHeader() {
         </div>
         <nav className="nav">
           <ul>
-            <li>
-              <a href="">characters</a>
-            </li>
-            <li>
-              <a href="">comics</a>
-            </li>
-            <li>
-              <a href="">movies</a>
-            </li>
-            <li>
-              <a href="">tv</a>
-            </li>
-            <li>
-              <a href="">games</a>
-            </li>
-            <li>
-              <a href="">collectibles</a>
-            </li>
-            <li>
-              <a href="">videos</a>
-            </li>
-            <li>
-              <a href="">fans</a>
-            </li>
-            <li>
-              <a href="">news</a>
-            </li>
-            <li>
-              <a href="">shop</a>
-            </li>
+            {headerMenu.map((curNav, index) => (
+              <li key={`nav-${index}`}>
+                <a href={curNav.url}>{curNav.title}</a>
+              </li>
+            ))}
           </ul>
         </nav>
       </div>
