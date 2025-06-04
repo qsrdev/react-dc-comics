@@ -7,7 +7,7 @@ function comicsDisplay() {
     <div className="container">
       <h3 className="">Current Series</h3>
 
-      <ComicsCard />
+      <ComicsCard comicsList={comics} />
 
       <div className="flex ">
         <span className="loadmore mtb-5">Load More</span>

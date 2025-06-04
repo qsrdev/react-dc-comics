@@ -1,13 +1,11 @@
-import comics from "../../data/comics.js";
+import SingleCard from "./SingleCard";
+//const ComicsCard = ({comicsList}) => {
+//const ComicsCard = (props) => {
 
-const ComicsCard = () => {
+// props.comicsList
+const ComicsCard = ({ comicsList }) => {
   const renderCards = () => {
-    return comics.map(({ thumb, title }, index) => (
-      <div className={`card my-5 card-${index}`}>
-        <img src={thumb} alt={`Fumetto ${title}`} />
-        <h5 className="my-5">{title}</h5>
-      </div>
-    ));
+    return comicsList.map(({ thumb, title }, index) => <SingleCard thumb={thumb} title={title} index={index} />);
   };
 
   return <div className="row">{renderCards()}</div>;
